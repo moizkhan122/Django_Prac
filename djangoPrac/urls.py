@@ -21,4 +21,6 @@ from djangoPrac import view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('name/', view.name),
+    #for dynamic url/view
+    path('name/<detail>', view.namedetail),
 ]
